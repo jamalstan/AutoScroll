@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Auto-Advance",
+  "version": "0.1.0",
+  "description": "Automatically advance to the next YouTube Short when the current one ends.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Shorts Auto-Advance",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/16.png",
+    "32": "img/32.png",
+    "48": "img/48.png",
+    "128": "img/128.png"
+  }
+}
+
+

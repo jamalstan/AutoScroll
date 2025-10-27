@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shorts Auto-Advance</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin: 12px; }
+      .row { display: flex; align-items: center; gap: 10px; }
+      .status { font-size: 13px; color: #555; }
+      .toggle { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+      input[type="checkbox"] { width: 18px; height: 18px; }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <label class="toggle">
+        <input type="checkbox" id="enabledToggle" />
+        <span>Enable auto-advance</span>
+      </label>
+    </div>
+    <div class="status" id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+  </html>
+
+
